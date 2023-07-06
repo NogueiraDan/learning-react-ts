@@ -1,0 +1,85 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.admin-container.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.admin-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.admin-email {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-button {
+  padding: 10px;
+  width: 100px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button.dark {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+}
+
+.content {
+  font-size: 16px;
+  margin: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.counterWrapper{
+  width: 50%;
+  height: 200px;
+  background: rgb(233,233,250);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  input{
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  button {
+    width: auto;
+    height: 30px;
+    background: #f5f5f5;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,1 @@
+## Projeto destinado ao estudo do Typescript no React
