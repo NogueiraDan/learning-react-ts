@@ -1,19 +1,19 @@
-import ThemeSwitcher from "./components/Redux/ThemeSwitcher";
-import Counter from "./components/Redux/Counter";
+// import ThemeSwitcher from "./components/Redux/ThemeSwitcher";
+// import Counter from "./components/Redux/Counter";
 
-const App: React.FC = () => {
-  return (
-    <>
-    <h1>Estados com Redux</h1> 
-    <br/>
-    <ThemeSwitcher/>
-    <br/>
-    <Counter/>
-    </>
-  );
-};
+// const App: React.FC = () => {
+//   return (
+//     <>
+//     <h1>Estados com Redux</h1> 
+//     <br/>
+//     <ThemeSwitcher/>
+//     <br/>
+//     <Counter/>
+//     </>
+//   );
+// };
 
-export default App;
+// export default App;
 
 // import React from 'react';
 // import "./styles/styles.css"
@@ -40,36 +40,40 @@ export default App;
 // };
 // export default App;
 
-// import React from "react";
-// import { lazy, Suspense } from "react";
-// import ReducerComponent from "./components/Hooks/ReducerComponent";
-// import RefComponent from "./components/Hooks/RefComponent";
-// import CallbackComponent from "./components/Hooks/CallbackComponent";
-// const LazyComponent = lazy(()=>import("./components/LazyLoad/LazyComponent"));
-// const DataComponent = lazy(()=>import("./components/LazyLoad/Data"));
+import React from "react";
+import { lazy, Suspense } from "react";
+import ReducerComponent from "./components/Hooks/ReducerComponent";
+import RefComponent from "./components/Hooks/RefComponent";
+import CallbackComponent from "./components/Hooks/CallbackComponent";
+const LazyComponent = lazy(()=>import("./components/LazyLoad/LazyComponent"));
+const DataComponent = lazy(()=>import("./components/LazyLoad/Data"));
 
-// const App: React.FC = () => {
+const App: React.FC = () => {
 
-//   return (
-//     <div>
-//     <h1>Página Inicial</h1><br/>
-//     <p>Exemplos de uso do Reducer</p>
-//     <ReducerComponent/>
-//     <br/>
-//     <p>Exemplos de uso do Ref</p>
-//     <RefComponent/>
-//     <br/>
-//     <p>Exemplos de uso do Callback</p>
-//     <CallbackComponent/>
-//     <p>Exemplo de uso de Lazy Load</p>
-//     <Suspense fallback={<div><h1>Carregando...</h1></div>}>
-//       {/* <DataComponent /> */}
-//       <LazyComponent/>
-//     </Suspense>
-//   </div>
-//   );
-// };
-// export default App;
+  return (
+    <div>
+    <h1>Página Inicial</h1><br/>
+    <h2>Exemplos de uso do Reducer</h2>
+    <ReducerComponent/>
+    <br/>
+    <h2>Exemplos de uso do Ref</h2>
+    <RefComponent/>
+    <br/>
+    <h2>Exemplos de uso do Callback</h2>
+    <CallbackComponent/>
+    <br/>
+    <h2>Exemplo de uso de Lazy Load</h2>
+    <Suspense fallback={<div><h1>Carregando...</h1></div>}>
+      <LazyComponent/>
+    </Suspense>
+    <br/>
+    <Suspense fallback={<div><h1>Carregando...</h1></div>}>
+      <DataComponent/>
+    </Suspense>
+  </div>
+  );
+};
+export default App;
 
 // TUTORIAL APRENDENDO TYPESCRIPT COM REACT
 // import { useState } from "react";

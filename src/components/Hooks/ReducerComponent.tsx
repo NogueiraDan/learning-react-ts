@@ -1,3 +1,10 @@
+/**
+ * É uma alternativa para mantermos nosso estado quando o mesmo é mais complexo. 
+ * Se você conhece a sintaxe do redux, a mesma é utilizada no useReducer. 
+ * Algo que deve ser mencionado é que aqui não temos a propagação do estado 
+ * por toda a aplicação como o redux proporciona.
+ */
+
 import React, { useReducer } from 'react';
 
 interface State {
@@ -28,8 +35,8 @@ const ReducerComponent: React.FC = () => {
 
   return (
     <div>
-      <p>Count: {state.count}</p>
-      <p>isActive: {state.isActive ? 'true' : 'false'}</p><br/>
+      <p>Contador: {state.count}</p>
+      <p>Está Ativo: {state.isActive ? 'true' : 'false'}</p><br/>
       <button onClick={() => dispatch({ type: 'increment' })}>Increment</button><br/>
       <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button><br/>
       <button onClick={() => dispatch({ type: 'toggle' })}>Toggle</button>

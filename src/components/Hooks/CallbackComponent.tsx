@@ -7,7 +7,7 @@ const CallbackComponent: React.FC = () => {
 
   const handleClick = useCallback(() => {
     // a função só será recriada quando `count` alterar
-    console.log("Count:", count);
+    alert("Now Count is:"+ count);
   }, [count]);
 
   const handleItemClick = useCallback((item: string) => {
